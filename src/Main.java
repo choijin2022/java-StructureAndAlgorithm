@@ -1,6 +1,6 @@
 
-import static lect03.SeqSearch.insertArrNum;
-import static lect03.SeqSearch.searchResultPrint;
+import static lect03.SeqSearchSen.insertArrNumSen;
+import static lect03.SeqSearchSen.searchResultSenPrint;
 
 
 public class Main {
@@ -8,8 +8,8 @@ public class Main {
     public static void main(String[] args) {
 
         int num = 7;
-        int[] x = insertArrNum(num);
-        searchResultPrint(x,num);
+        int[] x = insertArrNumSen(num);
+        searchResultSenPrint(x,num);
 
 
     }

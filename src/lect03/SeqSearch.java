@@ -8,7 +8,7 @@ public class SeqSearch {
         Scanner stdIn = new Scanner(System.in);
         System.out.print("찾으려는 값 : ");
         int ky = stdIn.nextInt();
-        int idx = seqSearchFor(a,n,ky);
+        int idx = seqSearch(a,n,ky);
         if (idx == -1) {
             System.out.println("그 값의 요소가 없습니다");
         } else {
@@ -18,11 +18,20 @@ public class SeqSearch {
     }
     static int seqSearch(int[] a, int n, int key){
         int i =0;
+        int count = 0;
         while (true){
-            if(i==n)
+            if(i==n){
+                ++count;
+                System.out.println("count : "+ count);
                 return -1;
-            if(a[i] == key)
+            }
+
+            if(a[i] == key){
+                ++count;
+                System.out.println("count : "+ count);
                 return i;
+            }
+            count++;
             i++;
         }
     }
