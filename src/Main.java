@@ -1,15 +1,13 @@
 
-import static lect03.SeqSearchSen.insertArrNumSen;
-import static lect03.SeqSearchSen.searchResultSenPrint;
+import static lect03.BinarySearch.binarySearch;
+
 
 
 public class Main {
 
     public static void main(String[] args) {
 
-        int num = 7;
-        int[] x = insertArrNumSen(num);
-        searchResultSenPrint(x,num);
+        binarySearch(7,100);
 
 
     }
