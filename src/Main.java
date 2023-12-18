@@ -1,15 +1,15 @@
 
-import static lect02.PhysicalExam.insertDatas;
+import static lect03.SeqSearch.insertArrNum;
+import static lect03.SeqSearch.searchResultPrint;
 
-import lect02.PhysicalExam;
 
 public class Main {
 
     public static void main(String[] args) {
 
-        PhysicalExam.PhyscDate[] x = insertDatas();
-
-        PhysicalExam.printDatas(x);
+        int num = 7;
+        int[] x = insertArrNum(num);
+        searchResultPrint(x,num);
 
 
     }
