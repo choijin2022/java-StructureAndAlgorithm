@@ -31,31 +31,39 @@ public class BinarySearch {
         int pr = num -1;
        int pc = (num-1)/2;
        int index = 0;
+       int count = 0;
 
 
        while (true){
            if(targetNum == a[pc]){
                index= pc;
+               count++;
+               System.out.println("count: "+count);
                return index;
            }
            if(targetNum >a[pc]){
                pl = pc;
                for (int i = pl; i <= pr; i++){
+                   count++;
                    if(targetNum == a[i]){
                        index= i;
+                       System.out.println("count: "+count);
                        return index;
                    }
                }
            }else if(targetNum < a[pc]){
                pr = pc;
                for (int i = pl; i < pr; i++){
+                   count++;
                   if(targetNum == a[i]){
                       index= i;
+                      System.out.println("count: "+count);
                       return index;
                   }
               }
            }
            if(index == 0){
+               System.out.println("count: "+count);
                System.out.println("요소값이 없습니다");
                return -1;
           }
