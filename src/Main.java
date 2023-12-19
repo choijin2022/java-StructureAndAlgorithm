@@ -1,6 +1,5 @@
 import static lect03.ArrayRandNum.arrSortRandNum;
-import static lect03.BinSearch.binSearchDescPrint;
-
+import static lect03.BinarySearchTester.binarySearchOrInsertValue;
 
 
 public class Main {
@@ -9,6 +8,6 @@ public class Main {
 
         int num = 15;
         int[] a=  arrSortRandNum( num,100);
-        binSearchDescPrint(a,num);
+        binarySearchOrInsertValue(a,num);
     }
 }
