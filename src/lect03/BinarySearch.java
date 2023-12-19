@@ -1,6 +1,7 @@
 package lect03;
 
-import static lect03.ArraySortRandNum.arrRandNumSum;
+
+import static lect03.ArrayRandNum.arrSortNotRepeatRandNum;
 
 import java.util.Scanner;
 
@@ -8,7 +9,7 @@ public class BinarySearch {
 
     public static void binarySearch(int num, int randNumMax){
         Scanner sc = new Scanner(System.in);
-        int[] a = arrRandNumSum( num,  randNumMax);
+        int[] a = arrSortNotRepeatRandNum( num,  randNumMax);
 
         System.out.print("찾을 값 : ");
         int targetNum = sc.nextInt();
