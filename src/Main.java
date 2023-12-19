@@ -10,9 +10,5 @@ public class Main {
         int num = 7;
         int[] a=  insertSortNum( num);
         binSearchPrint(a,num);
-
-
-
-
     }
 }

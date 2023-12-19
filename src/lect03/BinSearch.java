@@ -10,7 +10,7 @@ public class BinSearch {
         System.out.print("찾을 값: ");
         int key = sc.nextInt();
 
-        int index = binSearch(a,n,key);
+        int index = binSearchFor(a,n,key);
 
         if (index == -1) {
             System.out.println("그 값의 요소가 없습니다.");
@@ -38,6 +38,40 @@ public class BinSearch {
         }while (pl <=pr);
         return -1;
     }
+    static int binSearchFor(int[]a, int n, int key){
+        int pl = 0;
+        int pr = n-1;
+        int pc = (pl+pr)/2;
+        //  1. a[pc]와 key를 대조하여 동일하면 pc를 리턴, a[pc]가 더 크다면?
+        for(; true;){
+            if(key == a[pc]){
+               return pc;
+           }
+           if(key >a[pc]){
+               pl = pc;
+               for (int i = pl; i <= pr; i++){
+                   if(key == a[i]){
+                       return i;
+                   }
+               }
+           }else if(key < a[pc]){
+               pr = pc;
+               for (int i = pl; i < pr; i++){
+                  if(key == a[i]){
+                      return i;
+                  }
+              }
+           }
+           if(key == 0){
+               System.out.println("요소값이 없습니다");
+               return -1;
+          }
+
+        }
+
+    }
+
+
     public static int[] insertSortNum(int num){
         Scanner sc = new Scanner(System.in);
         System.out.println("요소수 : "+num);
