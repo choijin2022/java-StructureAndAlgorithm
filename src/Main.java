@@ -1,13 +1,21 @@
-import static lect03.ArrayRandNum.arrSortRandNum;
-import static lect03.BinarySearchTester.binarySearchOrInsertValue;
+import static lect03.ArrSort.arrSortName;
+import static lect03.ArrSort.compName;
+
+import lect03.ArrSort;
 
 
 public class Main {
 
     public static void main(String[] args) {
 
-        int num = 15;
-        int[] a=  arrSortRandNum( num,100);
-        binarySearchOrInsertValue(a,num);
+        ArrSort[] person = {new ArrSort("z"), new ArrSort("d"), new ArrSort("a")};
+
+
+        arrSortName(person);
+
+        compName(person,  new ArrSort("e") );
+
+
+
     }
 }
