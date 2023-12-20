@@ -1,19 +1,16 @@
-import static lect03.ArrSort.arrSortName;
-import static lect03.ArrSort.compName;
+import static lect03.PhysExamSearch.insertData;
+import static lect03.PhysExamSearch.searchHeightData;
 
-import lect03.ArrSort;
+import lect03.PhysExamSearch;
 
 
 public class Main {
 
     public static void main(String[] args) {
 
-        ArrSort[] person = {new ArrSort("z"), new ArrSort("d"), new ArrSort("a")};
+        PhysExamSearch.PhyscDate[] data = insertData();
 
-
-        arrSortName(person);
-
-        compName(person,  new ArrSort("e") );
+        searchHeightData(data);
 
 
 
